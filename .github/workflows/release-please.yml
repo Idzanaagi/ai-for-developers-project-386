@@ -24,6 +24,7 @@ jobs:
 
       - name: Enable auto-merge on Release PR
         if: ${{ steps.release.outputs.prs_created }}
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
         run: |
