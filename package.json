@@ -8,6 +8,8 @@
     "build": "tsc",
     "start": "node dist/server.js",
     "test": "vitest run",
+    "test:unit": "vitest run src/__tests__/unit",
+    "test:int": "vitest run src/__tests__/integration",
     "test:watch": "vitest",
     "test:e2e": "playwright test"
   },

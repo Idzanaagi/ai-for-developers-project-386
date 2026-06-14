@@ -1,4 +1,4 @@
-import { bookings } from '../data/store.js';
+import { bookings } from '../../data/store.js';
 
 export function resetStore(): void {
   bookings.clear();
