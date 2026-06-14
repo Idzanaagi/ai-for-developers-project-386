@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.git/
+.gitignore
+AGENTS.md
+PLAN.md
+README.md
+test-results/
+spec/
+opencode.json
+tsconfig.json
+vitest.config.ts
+playwright.config.ts
