@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Idzanaagi/ai-for-developers-project-386/compare/calendar-booking-v1.1.2...calendar-booking-v1.2.0) (2026-06-14)
+
+
+### Features
+
+* support PORT env var in Dockerfile ([#12](https://github.com/Idzanaagi/ai-for-developers-project-386/issues/12)) ([2e0cdb3](https://github.com/Idzanaagi/ai-for-developers-project-386/commit/2e0cdb37a556fd04593167a0843352b030dda2ea))
+
 ## [1.1.2](https://github.com/Idzanaagi/ai-for-developers-project-386/compare/calendar-booking-v1.1.1...calendar-booking-v1.1.2) (2026-06-14)
 
 
