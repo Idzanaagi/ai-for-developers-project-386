@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/Idzanaagi/ai-for-developers-project-386/compare/calendar-booking-v1.1.1...calendar-booking-v1.1.2) (2026-06-14)
+
+
+### CI/CD
+
+* add ci type to changelog-sections and protect auto-merge step ([#9](https://github.com/Idzanaagi/ai-for-developers-project-386/issues/9)) ([a0778b1](https://github.com/Idzanaagi/ai-for-developers-project-386/commit/a0778b187a78ac3bf4f2402e17f1982fdf0934f5))
+* add Render MCP server configuration ([#8](https://github.com/Idzanaagi/ai-for-developers-project-386/issues/8)) ([f549349](https://github.com/Idzanaagi/ai-for-developers-project-386/commit/f549349a0afe307b5b4d2ceb2565e7733540f65a))
+
 ## [1.1.1](https://github.com/Idzanaagi/ai-for-developers-project-386/compare/calendar-booking-v1.1.0...calendar-booking-v1.1.1) (2026-06-14)
 
 
