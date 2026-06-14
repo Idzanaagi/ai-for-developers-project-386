@@ -14,6 +14,14 @@
       "command": ["npx", "-y", "chrome-devtools-mcp@latest"],
       "enabled": true
     },
+    "render": {
+      "type": "remote",
+      "url": "https://mcp.render.com/mcp",
+      "enabled": true,
+      "headers": {
+        "Authorization": "Bearer {file:~/.config/opencode/render-token}"
+      }
+    },
     "github": {
       "type": "remote",
       "url": "https://api.githubcopilot.com/mcp/",
