@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import request from 'supertest';
-import app from '../app.js';
+import app from '../../app.js';
 import { resetStore, addBooking } from './helpers.js';
 
 beforeEach(() => {
@@ -117,7 +117,7 @@ describe('POST /bookings', () => {
         startTime: '2026-07-01T07:00:00.000Z',
       });
 
-    const bookings = (await import('../data/store.js')).bookings;
+    const bookings = (await import('../../data/store.js')).bookings;
     const booking = Array.from(bookings.values())[0];
     expect(booking.startTime.toISOString(), 'startTime должен совпадать с отправленным').toBe('2026-07-01T07:00:00.000Z');
     expect(booking.endTime.toISOString(), 'endTime должен быть startTime + 30 мин').toBe('2026-07-01T07:30:00.000Z');
@@ -133,7 +133,7 @@ describe('POST /bookings', () => {
         startTime: '2026-07-01T07:00:00.000Z',
       });
 
-    const bookings = (await import('../data/store.js')).bookings;
+    const bookings = (await import('../../data/store.js')).bookings;
     expect(bookings.size, 'в хранилище должна быть 1 бронь').toBe(1);
     const booking = Array.from(bookings.values())[0];
     expect(booking.id, 'должен быть сгенерирован UUID').toBeDefined();

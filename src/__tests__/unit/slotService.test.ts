@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
-import { getAvailableSlots } from '../services/slotService.js';
-import { resetStore, addBooking } from './helpers.js';
+import { getAvailableSlots } from '../../services/slotService.js';
+import { resetStore, addBooking } from '../integration/helpers.js';
 
 beforeEach(() => {
   resetStore();
@@ -14,7 +14,7 @@ describe('getAvailableSlots', () => {
   it('returns 16 slots for a future date with no bookings', () => {
     const slots = getAvailableSlots('2026-07-01');
 
-    expect(slots).toHaveLength(16, 'должно быть 16 слотов 09:00–16:30 MSK');
+    expect(slots,  'должно быть 16 слотов 09:00–16:30 MSK').toHaveLength(16);
     slots.forEach(s => {
       expect(s.available, 'все слоты должны быть свободны').toBe(true);
     });

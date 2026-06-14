@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import request from 'supertest';
-import app from '../app.js';
+import app from '../../app.js';
 import { resetStore, addBooking } from './helpers.js';
 
 beforeEach(() => {

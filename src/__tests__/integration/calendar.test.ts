@@ -1,6 +1,6 @@
 import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
 import request from 'supertest';
-import app from '../app.js';
+import app from '../../app.js';
 import { resetStore } from './helpers.js';
 
 beforeEach(() => {
